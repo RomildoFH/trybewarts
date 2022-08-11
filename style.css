@@ -81,4 +81,6 @@
     align-items: center;
   }
 
-  
+  #infos-container {
+    display: flex;
+  }
