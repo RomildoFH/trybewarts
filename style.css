@@ -84,3 +84,7 @@
   #infos-container {
     display: flex;
   }
+
+  #contador-container {
+    display: flex;
+  }
