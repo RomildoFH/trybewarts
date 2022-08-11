@@ -10,16 +10,3 @@ function verificarLogin() {
   } else alert('Email ou senha inválidos.');
 }
 login.addEventListener('click', verificarLogin);
-
-// function desabilitar(event) {
-//     if (aceitar.checked !== true) {
-//         event.preventDefault();
-//     }
-// }
-// desabilitar();
-
-// botaoEnviar.addEventListener('click', function (event) {
-//     if (aceitar.checked !== true) {
-//         event.preventDefault();
-//     }
-// });
