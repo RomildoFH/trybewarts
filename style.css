@@ -18,7 +18,24 @@
   main{
     display: flex;
   }
-  form{
+  #evaluation-form{
     display: flex;
     width: 675px;
+    flex-direction: column;
+  }
+
+  #solucao{
+    display: flex;
+  }
+  
+  #input-lastname{
+    flex-grow: 1;
+  }
+  #trybewarts-forms-logo{
+    height: 500px;
+  }
+  aside{
+    display: flex;
+    justify-content: right;
+
   }
