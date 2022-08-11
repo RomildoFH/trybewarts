@@ -1,90 +1,96 @@
-  *{
-    margin: 0;
-    padding: 0;
-  }
-  .header{
-    background-color: rgb(50, 167, 145);
-    display: flex;
-    justify-content: space-between;
-  }
-  .trybewarts-login{
-    display: flex;
-    flex-wrap: wrap;
-    height: 20px;
-  }
-  #trybewarts-header-title{
-    display: flex;
-  }
-  main{
-    display: flex;
-  }
-  #evaluation-form{
-    display: flex;
-    width: 675px;
-    flex-direction: column;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  #solucao{
-    display: flex;
-  }
-  
-  #input-lastname{
-    flex-grow: 1;
-  }
-  #trybewarts-forms-logo{
-    height: 500px;
-  }
-  aside{
-    display: flex;
-    justify-content: right;
-  }
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+}
 
-  #solucao2 {
-    display: flex;
-  }
+.trybewarts-login {
+  display: flex;
+  flex-wrap: wrap;
+  height: 20px;
+}
 
-  #input-email {
-    flex-grow: 1;
-  }
+#trybewarts-header-title {
+  display: flex;
+}
 
-  #solucao3 {
-    display: flex;
-    /* height: 100px; */
-    flex-wrap: wrap;
-    box-sizing: border-box ;
-    justify-content: space-between;
-  }
+main {
+  display: flex;
+}
 
-  #solucao4 {
-    display: flex;
-    width: 60%;
-    flex-wrap: wrap;
-  }
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
 
-  .subject {
-    margin-left: 3px;
-  }
+#solucao {
+  display: flex;
+}
 
-  #avaliacao-container {
-    display: flex;
-    flex-direction: column;
-  }
+#input-lastname {
+  flex-grow: 1;
+}
 
-  #rate-container {
-    display: flex;
-    justify-content: space-between;    
-  }
+#trybewarts-forms-logo {
+  height: 500px;
+}
 
-  .rate {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+aside {
+  display: flex;
+  justify-content: right;
+}
 
-  #infos-container {
-    display: flex;
-  }
+#solucao2 {
+  display: flex;
+}
 
-  #contador-container {
-    display: flex;
-  }
+#input-email {
+  flex-grow: 1;
+}
+
+#solucao3 {
+  display: flex; /* height: 100px; */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+#solucao4 {
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+}
+
+.subject {
+  margin-left: 3px;
+}
+
+#avaliacao-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#rate-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#infos-container {
+  display: flex;
+}
+
+#contador-container {
+  display: flex;
+}
