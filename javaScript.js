@@ -3,8 +3,8 @@ const email = document.getElementById('email');
 const password = document.getElementById('senha');
 const botaoEnviar = document.getElementById('submit-btn');
 const aceitar = document.getElementById('agreement');
-let caracteres = document.getElementById('counter');
-let comentarioCampo = document.getElementById('textarea');
+const caracteres = document.getElementById('counter');
+const comentarioCampo = document.getElementById('textarea');
 
 function verificarLogin() {
     if (email.value === 'tryber@teste.com' && password.value === '123456') {
@@ -13,12 +13,12 @@ function verificarLogin() {
 }
 login.addEventListener('click', verificarLogin);
 
-aceitar.addEventListener('click', function () {
-    if (aceitar.checked) {
-        botaoEnviar.disabled = false
-    } else {
-        botaoEnviar.disabled = true;
-    }
+aceitar.addEventListener('click', () => {
+  if (aceitar.checked) {
+    botaoEnviar.disabled = false;
+  } else {
+    botaoEnviar.disabled = true;
+  }
 });
 
 window.onload = function () {
@@ -48,4 +48,3 @@ function contagem () {
         caracteres.innerText = "500"
     }
 }
-contagem ()
