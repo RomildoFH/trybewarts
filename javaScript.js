@@ -4,12 +4,12 @@ const password = document.getElementById('senha');
 const botaoEnviar = document.getElementById('submit-btn');
 const aceitar = document.getElementById('agreement');
 let caracteres = document.getElementById('counter');
-let comentarioCampo = document.getElementById('area-texto');
+let comentarioCampo = document.getElementById('textarea');
 
 function verificarLogin() {
-  if (email.value === 'tryber@teste.com' && password.value === '123456') {
-    alert('Olá, Tryber!');
-  } else alert('Email ou senha inválidos.');
+    if (email.value === 'tryber@teste.com' && password.value === '123456') {
+        alert('Olá, Tryber!');
+    } else alert('Email ou senha inválidos.');
 }
 login.addEventListener('click', verificarLogin);
 
@@ -21,20 +21,31 @@ aceitar.addEventListener('click', function () {
     }
 });
 
-window.onload = function() {
+window.onload = function () {
     //Colcoar a fonte onde foi descoberto o código
     botaoEnviar.disabled = true;
 }
 
+// function contagem () {
+//     comentarioCampo.addEventListener('keyup', function () {
+//         if (comentarioCampo.value.length !== 0) {
+//             let sub = 500 - comentarioCampo.value.length
+//             caracteres.innerText = sub
+//         } 
+//         else {
+//             caracteres.innerText = "500"
+//         }
+//     });    
+// }
+// contagem ();
+
 function contagem () {
-    comentarioCampo.addEventListener('keyup', function () {
-        if (comentarioCampo.value.length !== 0) {
-            let sub = 500 - comentarioCampo.value.length
-            caracteres.innerHTML = sub
-        } 
-        else {
-            caracteres.innerHTML = "500"
-        }
-    });    
+    if (comentarioCampo.value.length !== 0) {
+        let sub = 500 - comentarioCampo.value.length
+        caracteres.innerText = sub
+    }
+    else {
+        caracteres.innerText = "500"
+    }
 }
 contagem ()
