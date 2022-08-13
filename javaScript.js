@@ -128,7 +128,7 @@ function packFuncoes() {
   gerarMaterias();
   gerarAvaliacao();
   gerarObservacao();
-  console.log(dataObject);
+  // console.log(dataObject);
 }
 
 const nomeCadastrado = document.getElementById('nome-cadastrado');
@@ -151,7 +151,7 @@ function relatorio() {
     materiasCadastradas.innerHTML = `Matérias: ${dataObject.materias}`;
     avaliacaoCadastrada.innerHTML = `Avaliação: ${dataObject.avaliacao}`;
     observacaoCadastrada.innerHTML = `Observações: ${dataObject.observacoes}`;
-    console.log(dataObject);
+    // console.log(dataObject);
   });
 }
 relatorio();
