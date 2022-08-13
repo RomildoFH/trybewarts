@@ -22,7 +22,7 @@
     </form>
   </header>
   <main>
-    <form action="" method="get" id="evaluation-form">
+    <form action="" method="get" id="evaluation-form" onsubmit="return false">
       <div id="solucao">
         <input type="text" id="input-name" placeholder="Nome">
         <input type="text" id="input-lastname" placeholder="Sobrenome">
@@ -86,43 +86,43 @@
           <div id="rate-container">
             <div class="rate">
               <label for="">1</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="1">
             </div>
             <div class="rate">
               <label for="">2</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="2">
             </div>
             <div class="rate">
               <label for="">3</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="3">
             </div>
             <div class="rate">
               <label for="">4</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="4">
             </div>
             <div class="rate">
               <label for="">5</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="5">
             </div>
             <div class="rate">
               <label for="">6</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="6">
             </div>
             <div class="rate">
               <label for="">7</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="7">
             </div>
             <div class="rate">
               <label for="">8</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="8">
             </div>
             <div class="rate">
               <label for="">9</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="9">
             </div>
             <div class="rate">
               <label for="">10</label>
-              <input type="radio" name="rate" id="" value="1">
+              <input type="radio" name="rate" class="nota" value="10">
             </div>
           </div>
         </div>
@@ -142,10 +142,23 @@
     <aside>
       <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
     </aside>
+    <div id="form-data" action="">
+      <div id="informacoes-cadastradas">
+        <h1 id="msg-boas-vindas">Bem Vindo à Essa Escola Mágica</h1>
+        <p id="msg-confirma-cadastro">Seu cadastro foi realizado com sucesso, você agora é o(a) mais novo(a) Tryzard</p>
+        <p id="nome-cadastrado">Nome: </p>
+        <p id="email-cadastrado">Email: </p>
+        <p id="casa-cadastrada">Casa: </p>
+        <p id="familia-cadastrada">Familia: </p>
+        <p id="materias-cadastradas">Materias: </p>
+        <p id="avaliacao-cadastrada">Avaliação: </p>
+        <p id="observacao-cadastrada">Observação: </p>
+      </div>
+    </div>
     <footer>
         <p>Direitos reservados à Trybewarts©</p>
     </footer>
-    <script src="javaScript.js"></script>
+    <script src="javaScript.js"></script>    
 </body>
 
 </html>
