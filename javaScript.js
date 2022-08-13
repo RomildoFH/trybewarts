@@ -30,12 +30,14 @@ window.onload = function carregamento() {
 };
 
 function contagem() {
-  if (comentarioCampo.value.length !== 0) {
-    const sub = 500 - comentarioCampo.value.length;
-    caracteres.innerText = sub;
-  } else {
-    caracteres.innerText = '500';
-  }
+  comentarioCampo.addEventListener('keyup', () => {
+    if (comentarioCampo.value.length !== 0) {
+      const sub = 500 - comentarioCampo.value.length;
+      caracteres.innerHTML = sub;
+    } else {
+      caracteres.innerHTML = '500';
+    }
+  });
 }
 contagem();
 

@@ -22,6 +22,19 @@
     </form>
   </header>
   <main>
+    <div id="form-data" action="">
+      <div id="informacoes-cadastradas">
+        <h1 id="msg-boas-vindas">Bem Vindo à Essa Escola Mágica</h1>
+        <p id="msg-confirma-cadastro">Seu cadastro foi realizado com sucesso, você agora é o(a) mais novo(a) Tryzard</p>
+        <p id="nome-cadastrado">Nome: </p>
+        <p id="email-cadastrado">Email: </p>
+        <p id="casa-cadastrada">Casa: </p>
+        <p id="familia-cadastrada">Familia: </p>
+        <p id="materias-cadastradas">Materias: </p>
+        <p id="avaliacao-cadastrada">Avaliação: </p>
+        <p id="observacao-cadastrada">Observação: </p>
+      </div>
+    </div>
     <form action="" method="get" id="evaluation-form" onsubmit="return false">
       <div id="solucao">
         <input type="text" id="input-name" placeholder="Nome">
@@ -126,39 +139,27 @@
             </div>
           </div>
         </div>
-        <label class="textarea" for="textarea">Deixe seu comentário:</label>
-        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500" placeholder="Deixe seu comentário:" onkeyup="contagem ()"></textarea>
-        <div id="contador-container">
-            <p>Caracteres restantes: </p>
-            <p id="counter">500</p>
-        </div>
-        <div id="infos-container">
-            <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-            <input type="checkbox" name="" id="agreement">
-        </div>
-        <button type="submit" id="submit-btn">Enviar</button>
+      </div>
+      <label class="textarea" for="area-texto">Deixe seu comentário:</label>
+      <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"
+        placeholder="Deixe seu comentário:"></textarea>
+      <div id="contador-container">
+        <p>Caracteres restantes: </p>
+        <p id="counter">500</p>
+      </div>
+      <div id="infos-container">
+        <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="" id="agreement">
+      </div>
+      <button type="submit" id="submit-btn">Enviar</button>
     </form>
-  </main>
     <aside>
       <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
     </aside>
-    <div id="form-data" action="">
-      <div id="informacoes-cadastradas">
-        <h1 id="msg-boas-vindas">Bem Vindo à Essa Escola Mágica</h1>
-        <p id="msg-confirma-cadastro">Seu cadastro foi realizado com sucesso, você agora é o(a) mais novo(a) Tryzard</p>
-        <p id="nome-cadastrado">Nome: </p>
-        <p id="email-cadastrado">Email: </p>
-        <p id="casa-cadastrada">Casa: </p>
-        <p id="familia-cadastrada">Familia: </p>
-        <p id="materias-cadastradas">Materias: </p>
-        <p id="avaliacao-cadastrada">Avaliação: </p>
-        <p id="observacao-cadastrada">Observação: </p>
-      </div>
-    </div>
+  </main>
     <footer>
         <p>Direitos reservados à Trybewarts©</p>
     </footer>
-    <script src="javaScript.js"></script>    
+    <script src="javaScript.js"></script>
 </body>
-
 </html>
