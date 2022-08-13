@@ -23,7 +23,7 @@ aceitar.addEventListener('click', () => {
   }
 });
 
-window.onload = function () {
+window.onload = function carregamento() {
   // Colcoar a fonte onde foi descoberto o código
   botaoEnviar.disabled = true;
   formData.style.display = 'none';
@@ -51,28 +51,28 @@ const dataObject = {
 
 function gerarNome() {
 // Criando valor para propriedade nome
-  inputName = document.getElementById('input-name').value;
-  inputSobrenome = document.getElementById('input-lastname').value;
+  const inputName = document.getElementById('input-name').value;
+  const inputSobrenome = document.getElementById('input-lastname').value;
   dataObject.nome = `${inputName} ${inputSobrenome}`;
 }
 
 function gerarEmail() {
 // Criando valor para email
-  inputEmail = document.getElementById('input-email').value;
+  const inputEmail = document.getElementById('input-email').value;
   dataObject.email = inputEmail;
 }
 
 function gerarCasa() {
 // Criando valor para casa
-  inputHouse = document.getElementById('house').value;
+  const inputHouse = document.getElementById('house').value;
   dataObject.casa = inputHouse;
 }
 
 function gerarFamilia() {
 // Criando valor para a propriedade familia quando apenas um é selecionado
-  inputFrontend = document.getElementById('frontend');
-  inputBackend = document.getElementById('backend');
-  inputFullstack = document.getElementById('fullstack');
+  const inputFrontend = document.getElementById('frontend');
+  const inputBackend = document.getElementById('backend');
+  const inputFullstack = document.getElementById('fullstack');
   if (inputFrontend.checked) {
     dataObject.familia = 'Frontend';
   } else if (inputBackend.checked) {
@@ -82,30 +82,31 @@ function gerarFamilia() {
   }
 }
 
-function gerarMaterias() {
 // Criando valor para materias quando podem ser selecionadas 1 ou mais.
-  const arrayMaterias = document.querySelectorAll('.subject');
-  const arrayMateriasSelecionadas = [];
-  for (let index = 0; index < arrayMaterias.length; index++) {
+const arrayMaterias = document.querySelectorAll('.subject');
+const arrayMateriasSelecionadas = [];
+function gerarArrayMaterias() {
+  for (let index = 0; index < arrayMaterias.length; index += 1) {
     if (arrayMaterias[index].checked) {
       arrayMateriasSelecionadas.push(arrayMaterias[index]);
     }
   }
-  for (index = 0; index < arrayMateriasSelecionadas.length; index++) {
+}
+
+function gerarMaterias() {
+  for (let index = 0; index < arrayMateriasSelecionadas.length; index += 1) {
     if (index < arrayMateriasSelecionadas.length - 1) {
       dataObject.materias += `${arrayMateriasSelecionadas[index].value}, `;
     } else {
       dataObject.materias += `${arrayMateriasSelecionadas[index].value}`;
     }
-    console.log(arrayMaterias);
-    console.log(arrayMateriasSelecionadas);
   }
 }
 
 function gerarAvaliacao() {
 // Criando valor para avaliacao quando apenas um pode ser selecionado
   const arrayAvaliacao = document.querySelectorAll('.nota');
-  for (index = 0; index < arrayAvaliacao.length; index++) {
+  for (let index = 0; index < arrayAvaliacao.length; index += 1) {
     if (arrayAvaliacao[index].checked) {
       dataObject.avaliacao = arrayAvaliacao[index].value;
     }
@@ -123,6 +124,7 @@ function packFuncoes() {
   gerarEmail();
   gerarCasa();
   gerarFamilia();
+  gerarArrayMaterias();
   gerarMaterias();
   gerarAvaliacao();
   gerarObservacao();
